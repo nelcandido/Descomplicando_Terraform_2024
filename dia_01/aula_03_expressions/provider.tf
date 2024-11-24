@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "descomplicando-terraform-statefiles"
-    key    = "aula_variables"
+    key    = "aula_expressions"
     region = "us-east-2"
   }
   required_providers {
@@ -15,9 +15,4 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-2"
-}
-
-provider "aws" {
-  alias  = "west"
-  region = "us-west-2"
 }
