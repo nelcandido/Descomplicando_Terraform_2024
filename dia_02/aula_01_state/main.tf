@@ -20,5 +20,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "HelloWorld"
+    Platform = data.aws_ami.ubuntu.platform_details
   }
 }

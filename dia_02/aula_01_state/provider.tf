@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "descomplicando-terraform-statefiles"
-    key    = "aula_backend"
+    key    = "aula_state"
     region = "us-east-2"
   }
   required_providers {

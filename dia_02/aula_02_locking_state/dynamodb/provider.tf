@@ -1,9 +1,8 @@
 terraform {
   backend "s3" {
     bucket = "descomplicando-terraform-statefiles"
-    key    = "aula_state"
+    key    = "aula_dynamodb"
     region = "us-east-2"
-    dynamodb_table = "descomplicando-terraform-2024"
   }
   required_providers {
     aws = {
