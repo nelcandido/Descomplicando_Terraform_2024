@@ -4,17 +4,17 @@ variable "nome" {
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "Ambiente da instância"
-  default = "dev"
+  default     = "dev"
 }
 
 variable "ami" {
-  type = string
+  type        = string
   description = "AMI da instancia"
 }
 
 variable "ami_bd" {
-  type = string
+  type        = string
   description = "AMI da instancia"
 }
